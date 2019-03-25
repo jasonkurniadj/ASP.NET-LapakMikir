@@ -1,0 +1,102 @@
+﻿<%----------------------------------------
+ -- Created by: Jason 
+ -- Date: December 28th, 2018
+ -- Purpose: Student master header
+----------------------------------------%>
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="student.master.cs" Inherits="LapakMikir.Pages.Student.student" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <%--<title></title>--%>
+
+    <link rel="stylesheet" type="text/css" href="~/Style/style.css" />
+
+    <script type="text/javascript">
+        function ShowMenu()
+        {
+            var menu = document.getElementById("SideMenu");
+
+            if (menu.style.display == "none") {
+                menu.style.display = "block";
+            }
+            else {
+                menu.style.display = "none";
+            }
+        }
+        
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="Header" style="height:25px;">
+        <h2 class="MarginPadding0 FloatLeft"><a href="student_dashboard.aspx" class="FontWhite" style="text-decoration:none;">LapakMikir</a></h2>
+
+        <ul class="Ul" style="margin-top:10px;">
+            <li class="Li"><a href="student_dashboard.aspx" class="A FontMedium FontWhite">Home</a></li>
+            <li class="Li"><a href="student_accountSetting.aspx" class="A FontMedium FontWhite">Account Setting</a></li>
+            <li class="Li"><a href="<%= Page.ResolveUrl("~/Pages/logout.aspx") %>" class="A FontMedium FontWhite">Logout</a></li>
+        </ul>
+    </header>
+
+    <div>
+        <button class="Toggle" onclick="ShowMenu()">
+            <span class="Icon-Bar"></span>
+            <span class="Icon-Bar"></span>
+            <span class="Icon-Bar"></span>
+        </button>
+    </div>
+
+    <div style="width:98%; height:2px; background-color:midnightblue; margin-top:39px; margin-left:10px; margin-bottom:0;"></div>
+
+    <div ID="SideMenu" class="Collapse">
+        <ul style="margin:0; padding:0">
+            <li style="list-style:none;" class="NavMenu"><a href="student_materials.aspx" class="FontWhite" style="text-decoration:none;"><p style="margin:0;  padding:10px 10px 10px 10px;">View Material</p></a></li>
+            <li style="list-style:none;" class="NavMenu"><a href="student_chooseExercise.aspx" class="FontWhite" style="text-decoration:none;"><p style="margin:0;  padding:10px 10px 10px 10px;">Take Excercise</p></a></li>
+            <li style="list-style:none;" class="NavMenu"><a href="student_studyReport.aspx" class="FontWhite" style="text-decoration:none;"><p style="margin:0; padding:10px 10px 10px 10px;">View Study Report</p></a></li>
+        </ul>
+    </div>
+
+    <br />
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <div class="Footer">
+        <%--<div id="maps" style="margin:0; height:300px; margin-left:50px; padding-top:7vh;">
+            <iframe style="float:left; position:absolute;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016044.913512554!2d106.19982574950195!3d-5.866105811731978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x100c5e82dd4b820!2sJakarta!5e0!3m2!1sen!2sid!4v1518858226450">
+            </iframe>
+
+            <div id="Address">
+                <p>Jl. K.H. Syahdan</p>
+                <p>Jakarta Barat, DKI Jakarta</p>
+                <p>Indonesia - [kodePos]</p>
+            </div>
+        </div>--%>
+
+        <div style="width: 100%">
+            <iframe style="margin-left:65px; padding-top:15px; padding-right:15px; float:left;" width="30%" height="235" src="https://maps.google.com/maps?width=100%&amp;height=250&amp;hl=en&amp;coord=-6.201962099999999,106.78116976993725&amp;q=BINUS%20(Bina%20Nusantara)%20University%20Anggrek%20Campus%2C%20university%2C%20Jakarta%20Special%20Capital%20Region%2C%20Indonesia+(LapakMikir)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <a href="https://www.maps.ie/map-my-route/">Map a route</a>
+            </iframe>
+
+            <div id="Address" style="padding-top: 100px;">
+                <p class="MarginPadding0">Jl. Kebon Jeruk Raya No.27</p>
+                <p class="MarginPadding0">Jakarta Barat, DKI Jakarta</p>
+                <p class="MarginPadding0">Indonesia - 11620</p>
+
+                <p><a href="mailto:lapakmikir@gmail.com" class="FontWhite">lapakmikir@gmail.com</a></p>
+            </div>
+        </div><br />
+
+        <p class="TextAlignCenter FontMedium" style="margin-top:10vh; color: #f1f1f1;">&copy; 2019 . LapakMikir .</p>
+    </div>
+</body>
+</html>

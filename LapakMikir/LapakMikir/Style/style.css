@@ -1,0 +1,262 @@
+﻿/***
+ * Created by: Jason
+ * Date: December 24th, 2018
+ * Purpose: General web style
+***/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/*-- MARGIN PADDING --*/
+.ClearTopBottom50px {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ClearTopBottom100px {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.ClearTopBottom150px {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.ClearTopBottom250px {
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.MarginPadding0 {
+    margin: 0;
+    padding: 0;
+}
+.MarginTop25px {
+    margin-top: 25px;
+}
+.MarginTop50px {
+    margin-top: 50px;
+}
+.MarginTop100px {
+    margin-top: 100px;
+}
+.MarginRight5p {
+    margin-right: 5%;
+}
+.PaddingLeftRight10px {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.MarginBottom10px {
+    margin-bottom: 10px;
+}
+
+.MarginLeft10px {
+    margin-left: 10px;
+}
+
+/*-- FLOAT --*/
+.FloatLeft {
+    float: left;
+}
+.FloatRight {
+    float: right;
+}
+
+/*-- POSITION --*/
+.MarginAuto {
+    margin: auto;
+}
+
+/*-- WIDTH --*/
+.Width100p {
+    width: 100%;
+}
+.Width75p {
+    width: 75%;
+}
+
+/*-- TEXT ALIGN --*/
+.TextAlignCenter {
+    text-align: center;
+}
+.TextAlignJustify {
+    text-align: justify;
+}
+.TextAlignLeft {
+    text-align: left;
+}
+.TextAlignRight {
+    text-align: right;
+}
+
+/*-- FONT --*/
+.FontBold {
+    font-weight: bold;
+}
+.FontLight {
+    font-weight: lighter;
+}
+.FontXXlarge {
+    font-size: xx-large;
+}
+.FontXLarge {
+    font-size: x-large;
+}
+.FontMedium {
+    font-size: medium;
+}
+.Font12pt {
+    font-size: 12pt;
+}
+.Font14pt {
+    font-size: 14pt;
+}
+.Font18pt {
+    font-size: 18pt;
+}
+.FontBlack {
+    color: black;
+}
+.FontWhite {
+    color: white;
+}
+.FontRed {
+    color: red;
+}
+.FontPrimary {
+    color: midnightblue;
+}
+
+/*-- BACKGROUND --*/
+.BgWhite {
+    background-color: whitesmoke;
+}
+.BgGrey {
+    background: rgba(128, 128, 128, 0.9);
+}
+.BgBlack {
+    background-color: black;
+}
+
+/*-- INPUT --*/
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid midnightblue;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid midnightblue;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid midnightblue;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+input[type=submit] {
+    border: none;
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+/*-- Button --*/
+.Btn {
+    border: none;
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+.FlexBtn {
+    padding: 10px 20px 10px 20px;
+}
+.FixBtn {
+    width: 75px;
+    height: 35px;
+}
+.BorderRadius10px {
+    border-radius: 10px;
+}
+.BorderRadius50px {
+    border-radius: 50px;
+}
+
+.Header {
+    width: auto;
+    background-color: midnightblue;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
+.Ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.Li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.A {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display:block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.A:hover {
+    color: yellow;
+}
+
+.Toggle {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: midnightblue;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.Icon-Bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    border-radius: 1px;
+    margin: 4px 0px 4px 0px;
+    background-color: white;
+}
+.Collapse {
+    display: none;
+    position: absolute;
+    background-color: midnightblue;
+    overflow: visible;
+    width: 13%;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.NavMenu {}
+.NavMenu:hover {
+    background-color: blue;
+}
+
+.Footer {
+    width: 100%;
+    height: 50vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.7)), to(rgba(0,0,0,1))),
+                url(../Assets/bgFooter.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: 100px;
+}
