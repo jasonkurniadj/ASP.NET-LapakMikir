@@ -1,4 +1,10 @@
-# IT BOOTCAMP - FINAL PROJECT
+# LapakMikir
+` This project is intended for IT Bootcamp Final Project assignments at Bina Nusantara (BINUS) IT Division in 2018 `
+
+## Overview
+LapakMikir is a online learning that provides material openly and free to anyone. There are 2 user roles, namely student and admin where students are required to register in advance in order to use existing features.
+Like online learning in general, students can learn and do the exercises provided.
+
 
 ## Kelompok 4
 ---------------------------------------------------------------------------------
@@ -27,7 +33,7 @@
 - Document IT yang tersisa (TD, dll) atau yang direvisi (jika ada revisi).
 
 ### Presentasi
-- Diadakan pada salah satu hari di range tgl 21 Jan – 25 Jan (akan diinfokan lebih lanjut). Semua peserta diwajibkan hadir.
+- Diadakan pada salah satu hari di range tgl 21 Jan â€“ 25 Jan (akan diinfokan lebih lanjut). Semua peserta diwajibkan hadir.
 - Waktu presentasi : 20-30 menit/group.
 - Peserta wajib membawa semua perlengkapan yang dibutuhkan sendiri (laptop, HP, etc) dan aplikasi sudah disetup terlebih dahulu untuk langsung bisa di presentasikan.
 
